@@ -21,20 +21,20 @@
             $insert->execute(array($token_user, $token));
 
             $link = 'recover.php?u='.base64_encode($token_user).'&token='.base64_encode($token);
-            echo "<a href='$link'>lien</a>";
-            /*
+            //echo "<a href='$link'>lien</a>";
+            
             // Envoyer le lien par e-mail
             $to = $email;
             $subject = 'Récupération de mot de passe';
             $message = "Cliquez sur le lien suivant pour réinitialiser votre mot de passe : $link";
-            $headers = 'From: votre@email.com'; // Remplacez cela par votre adresse e-mail
+            $headers = 'From: haroune.hmah@gmail.com'; // Remplacez cela par votre adresse e-mail
 
             // Utiliser la fonction mail() pour envoyer l'e-mail
             mail($to, $subject, $message, $headers);
 
             echo "Un lien de réinitialisation a été envoyé à votre adresse e-mail.";
 
-            */
+            
         } else{
             echo "Compte non existant";
         }
