@@ -13,7 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../styles.css" rel="stylesheet">
   
-  <title>Three Blocks Example</title>
+  <title>carrefour espace client </title>
 
 </head>
 
@@ -22,8 +22,8 @@
     <nav>
       <img src="../images/carefour.jpg" width="30" alt="Logo carefour">
       <div>
-        <a href="./index.html">Accueil</a>
-        <a href="./index.html">À propos</a>
+        <a href="session.php">Accueil</a>
+        <a href="session.php">À propos</a>
         <a href="deconnexion.php" class="btn btn-danger btn-lg"> Déconnexion</a>
       </div>
     </nav>

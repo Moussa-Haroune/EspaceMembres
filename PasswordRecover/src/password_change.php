@@ -1,7 +1,7 @@
 <?php 
 
     // pour securisé la recuperation du lien, valide qu'une seule fois
-    require_once __DIR__.'/../config/config.php';
+    require_once __DIR__.'/config.php';
     if(!empty($_GET['u'])){
         $token = htmlspecialchars(base64_decode($_GET['u']));
         $check = $bdd->prepare('SELECT * FROM password_recover WHERE token_user = ?');
