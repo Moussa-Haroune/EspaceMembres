@@ -46,7 +46,6 @@
       <div class="Espace-client">
         <fieldset> <legend>Connecter à votre espace perso</legend>
             <?php 
-                
                 if(isset($_GET['login_err']))
                 {
                     $err = htmlspecialchars($_GET['login_err']);
