@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="styles.css" rel="stylesheet">
+  
   <title>Three Blocks Example</title>
 
 </head>
@@ -22,12 +23,10 @@
 
   <main id="main">
 
-    <section id="block1">
+    <section id="block-lateral">
       <div class="open">
         <h2>Votre magasins <br>ouvert 10 janvier</h2>
         <img src="images/signe-ouvert.png" width="120" alt="">
-
-
         <img src="images/aide.png" width="160" alt="">
         <h2>Contacter nous </h2>
         <a href="" class="clic">cliquer ici</a>
@@ -45,50 +44,36 @@
       </div>
 
       <div class="Espace-client">
-
         <fieldset> <legend>Connecter à votre espace perso</legend>
-          <form class="connection" method="post">
-
-            <label for="utilisateur"> Email :  </label>
-              <input type="email" id="utilisateur" name="utilisateur" placeholder="Email utilisateur"
-              value=""> </input>
-           
-            <label for="motdepasse"> Password : <br></label>
-              <input type="password" id="motdepasse" name="motdepasse" placeholder="Mot de passe"
-              value="">
-            
-            <input type="checkbox" id="rememberme" name="rememberme" value="1" >
-            <label for="rememberme">Se souvenir de moi</label>
-
-            <button class="cta" type="submit" id="submited" name="submited">Connecter</button>
-          </form>
+            <form class="connection" action="connexion.php" method="post">
+                    <h2 class="text-center">Connexion</h2>       
+                    <input type="email" name="email" class="form-control" placeholder="Email" required="required" autocomplete="off">
+                    <input type="password" name="password" class="form-control" placeholder="Mot de passe" required="required" autocomplete="off">
+                    <button type="submit" class="btn btn-primary btn-block">Connexion</button>
+            </form>
+            <p class="text-center"><a href="/../PasswordRecover/index.php">mot de passe oublié ?</a></p>
+            <p class="text-center"><a href="inscription.php">Inscription</a></p>
         </fieldset>
 
         <fieldset> <legend>Pas encore d'espace perso ?</legend>
-          <form class="inscription" method="post">
-
-            <label for="utilisateur"> email : </label>
-            <input type="email" id="utilisateur" name="utilisateur" placeholder="Utilisateur"
-              value="">
-              <label for="motdepasse"> password : 
-            <input type="password" id="motdepasse" name="motdepasse" placeholder="Mot de passe"
-              value="">
-            </label>
-            <button class="cta" type="submit" id="submited" name="submited">s'incrire</button>
-          </form>
+          
+            <form class="inscription" action="inscription_traitement.php" method="post">
+                <h2 class="text-center">Inscription</h2>       
+                
+                <input type="email" name="email" class="form-control" placeholder="Email" required="required" autocomplete="off">
+                <input type="text" name="pseudo" class="form-control" placeholder="Pseudo" required="required" autocomplete="off">
+                <input type="password" name="password" class="form-control" placeholder="Mot de passe" required="required" autocomplete="off">
+                <input type="password" name="password_retype" class="form-control" placeholder="Re-tapez le mot de passe" required="required" autocomplete="off">
+                <button type="submit" class="btn btn-primary btn-block">Inscription</button>
+            </form>
         </fieldset>
-
-      </div>
-     
-      </div>
-      <p>Contenu du bloc 2.</p>
 
       </div>
     </section>
 
   </main>
   <footer>
-    <img src="images/carefour.jpg" width="30" alt="Logo carefour">
+    <img src="images/carefour.jpg" width="30" alt="Logo carrefour">
     <div>
       <a target="_blank" href="https://twitter.com/" class="lien-icone">
         <img src="images/facebook.png" width="30" alt="Logo Twitter">
