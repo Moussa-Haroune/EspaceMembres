@@ -24,12 +24,12 @@
                     header('Location:session.php');
                     die();
 
-                }else{ header('Location:index.php?login_err=password'); die(); }
+                }else{ header('Location:../index.php?login_err=password'); die(); }
 
-            }{header('Location:index.php?login_err=email'); die();}
+            }{header('Location:../index.php?login_err=email'); die();}
 
-        }else{ header('Location:index.php?login_err=already'); die();}
+        }else{ header('Location:../index.php?login_err=already'); die();}
 
-    }else {header('Location:index.php'); die();}
+    }else {header('Location:../index.php'); die();}
     
 ?>

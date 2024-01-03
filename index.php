@@ -15,8 +15,8 @@
     <nav>
       <img src="images/carefour.jpg" width="30" alt="Logo carefour">
       <div>
-        <a href="./index.html">Accueil</a>
-        <a href="./index.html">À propos</a>
+        <a href="./index.php">Accueil</a>
+        <a href="./index.php">À propos</a>
       </div>
     </nav>
   </header>
@@ -45,6 +45,41 @@
 
       <div class="Espace-client">
         <fieldset> <legend>Connecter à votre espace perso</legend>
+            <?php 
+                
+                if(isset($_GET['login_err']))
+                {
+                    $err = htmlspecialchars($_GET['login_err']);
+
+                    switch($err)
+                    {
+                        case 'password':
+                        ?>
+                            <div class="alert alert-danger">
+                            
+                                <strong>Erreur</strong> mot de passe incorrect
+                            </div>
+                        <?php
+                        break;
+
+                        case 'email':
+                        ?>
+                            <div class="alert alert-danger">
+                                <strong>Erreur</strong> email incorrect
+                            </div>
+                        <?php
+                        break;
+
+                        case 'already':
+                        ?>
+                            <div class="alert alert-danger">
+                                <strong>Erreur</strong> compte non existant
+                            </div>
+                        <?php
+                        break;
+                    }
+                }
+                ?> 
             <form  action="./inscrip/connexion.php" method="post">
                     <h2 class="text-center">Connexion</h2>       
                     <input type="email" name="email" class="form-control" placeholder="Email" required="required" autocomplete="off">

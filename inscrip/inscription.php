@@ -15,8 +15,8 @@
     <nav>
       <img src="../images/carefour.jpg" width="30" alt="Logo carefour">
       <div>
-        <a href="./../index.html">Accueil</a>
-        <a href="./../index.html">À propos</a>
+        <a href="./../index.php">Accueil</a>
+        <a href="./../index.php">À propos</a>
       </div>
     </nav>
   </header>
