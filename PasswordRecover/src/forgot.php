@@ -23,7 +23,7 @@
             $link = 'recover.php?u='.base64_encode($token_user).'&token='.base64_encode($token);
             echo "<a href='$link'>lien</a>";
             
-            // Envoyer le lien par e-mail
+            // Pour envoyer le lien par e-mail commenter le 
             /*$to = $email;
             $subject = 'Récupération de mot de passe';
             $message = "Cliquez sur le lien suivant pour réinitialiser votre mot de passe : $link";
