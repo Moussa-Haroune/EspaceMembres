@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +14,7 @@
 <body>
   <header>
     <nav>
+      
       <img src="images/carefour.jpg" width="30" alt="Logo carefour">
       <div>
         <a href="./index.php">Accueil</a>
@@ -46,6 +48,7 @@
       <div class="Espace-client">
         <fieldset> <legend>Connecter à votre espace perso</legend>
             <?php 
+                /* bkld */
                 if(isset($_GET['login_err']))
                 {
                     $err = htmlspecialchars($_GET['login_err']);
